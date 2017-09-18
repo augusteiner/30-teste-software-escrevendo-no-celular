@@ -99,3 +99,41 @@ charToGSM('b') // NÃO é jogada exceção do tipo IllegalArgumentException
 ```java
 charToGSM('ç') // é jogada exceção do tipo IllegalArgumentException
 ```
+
+## Executando os testes
+
+### Pré-requisitos
+
+É necessário ter o java instalado para executar os testes. Para verificar execute o seguinte comando:
+
+```bash
+java -version
+```
+
+Que deverá ter uma saída similar a:
+
+```
+openjdk version "1.8.0_131"
+OpenJDK Runtime Environment (build 1.8.0_131-8u131-b11-1~bpo8+1-b11)
+OpenJDK 64-Bit Server VM (build 25.131-b11, mixed mode)
+```
+
+### Execução dos testes
+
+Em um terminal, na **raiz do projeto** execute o(s) seguinte(s) comando(s):
+
+```bash
+./mvnw -q test
+```
+
+Que deverá ter uma saída similar a:
+
+```
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+```
