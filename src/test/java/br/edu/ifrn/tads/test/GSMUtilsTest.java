@@ -75,4 +75,10 @@ public class GSMUtilsTest {
         assertEquals(asciiToGSM("ad"), "12");
     }
 
+    @Test
+    public void testeCaso7_NaoDeveJogarIllegalArgumentException() {
+
+        assertNotNull(charToGSM('a'));
+    }
+
 }
