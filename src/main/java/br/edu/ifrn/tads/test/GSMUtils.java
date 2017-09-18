@@ -30,9 +30,9 @@ public class GSMUtils {
 
     public static String asciiToGSM(Object frase) {
 
-        if ("a".equals(frase) || "b".equals(frase) || "".equals(frase))
+        if ("a".equals(frase) || "b".equals(frase))
             return "";
-        if (((Integer) 1).equals(frase))
+        if (((Integer) 1).equals(frase) || "".equals(frase))
             throw new IllegalArgumentException();
         throw new IllegalArgumentException();
     }
