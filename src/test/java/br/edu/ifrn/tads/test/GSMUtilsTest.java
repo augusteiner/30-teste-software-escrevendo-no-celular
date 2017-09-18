@@ -81,4 +81,11 @@ public class GSMUtilsTest {
         assertNotNull(charToGSM('a'));
     }
 
+    @Test
+    public void testeCaso8_DeveJogarIllegalArgumentException() {
+
+        thrown.expect(IllegalArgumentException.class);
+        assertNotNull(charToGSM(1));
+    }
+
 }
