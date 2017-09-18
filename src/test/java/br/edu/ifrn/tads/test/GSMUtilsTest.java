@@ -50,4 +50,10 @@ public class GSMUtilsTest {
         asciiToGSM(1);
     }
 
+    @Test
+    public void testeCaso3_NaoDeveJogarIllegalArgumentException() {
+
+        assertNotNull(asciiToGSM("b"));
+    }
+
 }
