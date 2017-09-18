@@ -32,6 +32,8 @@ public class GSMUtils {
 
         if ("a".equals(frase))
             return "";
+        if (((Integer) 1).equals(frase))
+            return "";
         throw new IllegalArgumentException();
     }
 
