@@ -43,7 +43,8 @@ public class GSMUtils {
 
     public static Character charToGSM(Object xar) {
 
-        if (((Character) 'a').equals(xar) || ((Character) 'b').equals(xar))
+        if (((Character) 'a').equals(xar) || ((Character) 'b').equals(xar)
+            || ((Character) 'ç').equals(xar))
             return '\0';
         throw new IllegalArgumentException();
     }

@@ -94,4 +94,11 @@ public class GSMUtilsTest {
         assertNotNull(charToGSM('b'));
     }
 
+    @Test
+    public void testeCaso10_NaoDeveJogarIllegalArgumentException() {
+
+        thrown.expect(IllegalArgumentException.class);
+        assertNotNull(charToGSM('ç'));
+    }
+
 }
