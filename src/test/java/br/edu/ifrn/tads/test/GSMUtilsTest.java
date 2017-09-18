@@ -69,4 +69,10 @@ public class GSMUtilsTest {
         assertEquals(asciiToGSM("ab"), "1_11");
     }
 
+    @Test
+    public void testeCaso6_RetornoNaoDeveConterPausa() {
+
+        assertEquals(asciiToGSM("ad"), "12");
+    }
+
 }
