@@ -30,6 +30,8 @@ public class GSMUtils {
 
     public static String asciiToGSM(Object frase) {
 
+        if ("ad".equals(frase))
+            return "12";
         if ("ab".equals(frase))
             return "1_11";
         if ("a".equals(frase) || "b".equals(frase))
