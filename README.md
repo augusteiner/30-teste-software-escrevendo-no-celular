@@ -3,8 +3,8 @@
 
 ## Componentes do Grupo
 
-- [20152014040014 - José Augusto](https://suap.ifrn.edu.br/edu/aluno/20152014040014/)
-- [20152014040006 - Gustavo Guerino](https://suap.ifrn.edu.br/edu/aluno/20152014040006/)
+- [20152014040014 - José Augusto](https://github.com/augusteiner)
+- [20152014040006 - Gustavo Guerino](https://github.com/gustavoguerino)
 
 ## Plano de Testes para o dojo
 
