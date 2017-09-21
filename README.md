@@ -27,7 +27,7 @@
 |------------------|-------------------|--------------------|----------------------------|-----------------------------|
 | asciiToGSM       | frase             | tipo(frase)        | tipo(frase) == string      | tipo(frase) != string       |
 | asciiToGSM       | frase             | len(frase)         | len(frase) &isin; (0, 255] | len(frase) &notin; (0, 255] |
-| asciiToGSM       | frase             | char(frase[i - 1]) | char(frase[i - 1]) == char(frase[i]) | char(frase[i - 1]) != char(frase[1]) |
+| asciiToGSM       | frase             | charToGSM(frase[i - 1])[0] | charToGSM(frase[i - 1])[0] == charToGSM(frase[i])[0] | charToGSM(frase[i - 1])[0] != charToGSM(frase[i])[0] |
 |                                                                                                                      |
 | charToGSM        | char              | tipo(char)         | tipo(char) == char         | tipo(char) != char          |
 | charToGSM        | char &isin; frase | ord(char)          | ord(char) &isin; &alpha;   | tipo(char) &notin; &alpha;  |
@@ -36,8 +36,8 @@
 ### Protótipos dos métodos
 
 ```java
-String asciiToGSM(String frase)
-Character charToGSM(Character char)
+String asciiToGSM(frase)
+String charToGSM(caractere)
 ```
 
 ### 1º Caso de Teste
