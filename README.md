@@ -25,11 +25,11 @@
 
 | Método           | Entrada           | Condição (teste)   | Classes válidas            | Classes inválidas           |
 |------------------|-------------------|--------------------|----------------------------|-----------------------------|
-| asciiToGSM       | frase             | tipo(frase)        | tipo(frase) == string      | tipo(frase) != string       |
+| asciiToGSM       | frase             | tipo(frase)        | tipo(frase) &equals; string      | tipo(frase) &ne; string       |
 | asciiToGSM       | frase             | len(frase)         | len(frase) &isin; (0, 255] | len(frase) &notin; (0, 255] |
-| asciiToGSM       | frase             | charToGSM(frase[i - 1])[0] | charToGSM(frase[i - 1])[0] == charToGSM(frase[i])[0] | charToGSM(frase[i - 1])[0] != charToGSM(frase[i])[0] |
+| asciiToGSM       | frase             | charToGSM(frase[i - 1])[0] | charToGSM(frase[i - 1])[0] &equals; charToGSM(frase[i])[0] | charToGSM(frase[i - 1])[0] &ne; charToGSM(frase[i])[0] |
 |                                                                                                                      |
-| charToGSM        | char              | tipo(char)         | tipo(char) == char         | tipo(char) != char          |
+| charToGSM        | char              | tipo(char)         | tipo(char) &equals; char         | tipo(char) &ne; char          |
 | charToGSM        | char &isin; frase | ord(char)          | ord(char) &isin; &alpha;   | tipo(char) &notin; &alpha;  |
 |                                                                                                                      |
 
